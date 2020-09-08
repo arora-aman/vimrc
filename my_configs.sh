@@ -10,7 +10,9 @@ curl -fLo $VIM_RUNTIME/autoload/plug.vim --create-dirs \
 
 case $(uname) in
     Darwin)
-        brew install neovim universal-tags
+        brew install neovim
+        brew install --HEAD universal-ctags/universal-ctags/universal-ctags
+
         ;;
     Linux)
         # Check for sudo access
@@ -27,7 +29,11 @@ esac
 
 MY_PLUGINS_DIR=$VIM_RUNTIME/my_plugins
 
-git clone --depth=1 https://github.com/majutsushi/tagbar.git $MY_PLUGINS_DIR
-git clone --depth=1 https://github.com/ludovicchabant/vim-gutentags.git $MY_PLUGINS_DIR
-git clone --depth=1 https://github.com/mattn/webapi-vim $MY_PLUGINS_DIR
+pushd $MY_PLUGINS_DIR
+
+git clone --depth=1 https://github.com/majutsushi/tagbar.git
+git clone --depth=1 https://github.com/ludovicchabant/vim-gutentags.git
+git clone --depth=1 https://github.com/mattn/webapi-vim
+
+popd
 
