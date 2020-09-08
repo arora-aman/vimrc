@@ -82,6 +82,8 @@ call plug#begin('~/.vim_runtime/my_plugins/plugged')
     
     Plug 'lervag/vimtex'
     let g:tex_flavor = 'latex'
+
+    Plug 'chrisbra/Colorizer' " Color ANSI files
 " }}}
 
 " NERDTree: {{{
@@ -286,9 +288,6 @@ set noerrorbells
 set visualbell
 set t_vb=
 set tm=500
-
-Plug 'chrisbra/Colorizer'
-call plug#end()
 
 colorscheme wombat
 set hidden
