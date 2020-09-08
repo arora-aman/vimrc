@@ -20,7 +20,7 @@ case $(uname) in
         if [[ ! $? -eq 0 ]]; then
             echo "Ensure that nvim and universal ctags are installed!"
         else
-            snap install universal-ctags
+            sudo snap install universal-ctags
             sudo snap install --beta nvim --classic
         fi
         ;;

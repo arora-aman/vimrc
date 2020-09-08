@@ -20,6 +20,8 @@ call plug#begin('~/.vim_runtime/my_plugins/plugged')
 " }}}
 
 " Programming: Language server support {{{
+    Plug 'ludovicchabant/vim-gutentags'
+    
     Plug 'dense-analysis/ale'
     nmap <silent> <leader>a <Plug>(ale_next_wrap)
 
