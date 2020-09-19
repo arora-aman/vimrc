@@ -116,6 +116,7 @@ call plug#begin('~/.vim_runtime/my_plugins/plugged')
     let NERDTreeDirArrowCollapsible = "\u00a0" " make arrows invisible
     let NERDTreeNodeDelimiter = "\u263a" " smiley face
     let NERDTreeShowHidden=1
+
     let g:NERDTreeGitStatusIndicatorMapCustom = {
     \ "Modified"  : "✹",
     \ "Staged"    : "✚",
