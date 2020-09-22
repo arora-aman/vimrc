@@ -12,7 +12,7 @@ curl -fLo $VIM_RUNTIME/autoload/plug.vim --create-dirs \
 mkdir -p $NVIMRC_PATH
 
 ln -sf $VIM_RUNTIME/.vimrc $VIMRC
-ln -sf $VIM_RUNTIME/.vimrc $NVIMRC_PATH
+ln -sf $VIM_RUNTIME/.vimrc $NVIMRC
 
 nvim +PlugInstall +qall
 
